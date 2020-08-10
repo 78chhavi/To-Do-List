@@ -1,0 +1,60 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>          Header portion removed  so that it can be applied to all other web pages without repitition. -->
+
+  <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="box" id="heading">
+      <h1>Today</h1>
+    </div>
+    <div class="box">
+        <form action="/delete" method="post">
+
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="5ebe837cda2dcb2c04bfe3df" onchange="this.form.submit()">
+                <p>Welcome to the To-Do List Web App!!</p>
+            </div>
+
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="5ebe837cda2dcb2c04bfe3e1" onchange="this.form.submit()">
+                <p>Check the checkbox to delete an item.</p>
+            </div>
+
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="5f11a05f9336840004e8c8ec" onchange="this.form.submit()">
+                <p>Write</p>
+            </div>
+
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="5f30cbbedc6bfb00043810ef" onchange="this.form.submit()">
+                <p>Lunch</p>
+            </div>
+
+          <input type="hidden" name="listName" value=Today>
+        </form>
+
+        <form action="/" method="post">
+          <input type="text" name="newItem" placeholder="Add to list" autocomplete="off">
+          <button type="submit" name="button" value=Today>+</button>
+        </form>
+    </div>
+
+<!-- </body>
+</html>         Footer portion removed  so that it can be applied to all other web pages without repitition.  -->
+
+</body>
+<footer>
+  Copyright 2020 Chhavi Jangid
+</footer>
+</html>

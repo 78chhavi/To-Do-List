@@ -1,0 +1,34 @@
+<!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>          Header portion removed  so that it can be applied to all other web pages without repitition. -->
+
+  <%-include("header")-%>
+    <div class="box" id="heading">
+      <h1><%=listTitle%></h1>
+    </div>
+    <div class="box">
+        <form action="/delete" method="post">
+          <%newItemName.forEach(function(item){%>
+            <div class="item">
+              <input type="checkbox" name="checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+                <p><%=item.name%></p>
+            </div>
+          <%});%>
+          <input type="hidden" name="listName" value=<%=listTitle%>>
+        </form>
+
+        <form action="/" method="post">
+          <input type="text" name="newItem" placeholder="Add to list" autocomplete="off">
+          <button type="submit" name="button" value=<%=listTitle%>>+</button>
+        </form>
+    </div>
+
+<!-- </body>
+</html>         Footer portion removed  so that it can be applied to all other web pages without repitition.  -->
+
+<%-include("footer")-%>
